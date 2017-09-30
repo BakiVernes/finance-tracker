@@ -33,6 +33,8 @@ Rails.application.routes.draw do
   #     resource :seller
   #   end
   root 'welcome#index'
+  get 'my_portfolio', to: "users#my_portfolio"
+  get 'search_stocks', to: "stocks#search"
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
